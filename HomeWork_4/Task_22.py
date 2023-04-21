@@ -1,0 +1,7 @@
+n = int(input('Введите количество чисел набора N: '))
+print('Введите числа набора N: ')
+n = set([input() for i in range(n)])
+m = int(input('Введите количество чисел набора M: '))
+print('Введите числа набора M: ')
+m = set([input() for j in range(m)])
+print(f'Числа, содержащиеся в обоих наборах: {" ".join(sorted(n & m))}')
