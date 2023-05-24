@@ -9,15 +9,16 @@ from contact_delete import contact_delete
 # from import_from_file import import_from_file
 # from export_phones import export_phones
 import global_variables as gv
-
+from contact_update import contact_update
 
 functions = {1: lambda: phones_view(),
              2: lambda: contact_search(),
              3: lambda: contact_add(),
-             4: lambda: contact_delete(),
-             # 5: lambda: import_from_file(),
-             # 6: lambda: export_phones(),
-             7: lambda: exit()}
+             4: lambda: contact_update(),
+             5: lambda: contact_delete(),
+             # 6: lambda: import_from_file(),
+             # 7: lambda: export_phones(),
+             8: lambda: exit()}
 
 while gv.choose_move != 7:
     os.system('cls')
